@@ -33,10 +33,12 @@ body {
     background-color: var(--background);
     font-family: var(--font);
     color: black;
+    font-size: 16px;
 }
 
 .container {
     width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -53,7 +55,7 @@ body {
 }
 
 .header .header-image {
-    width: 15%;
+    width: 20%;
     margin-left: 2.5rem;
 }
 
@@ -89,7 +91,7 @@ body {
 
 .section-email .form {
     margin: 15px auto;
-    width: 15%;
+    width: 28%;
 }
 
 .section-email .form .email {
@@ -106,9 +108,94 @@ body {
     border: none;
     border-radius: 2px;
     font-size: 16px;
-    padding: 5px 30px;
+    padding: 5px 18px;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
 }
 
+iframe {
+    display: block;
+    margin: 3rem auto;
+}
+
+.pricing {
+    width: 100%;
+    text-align: center;
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing .box-price {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+
+.box-price .title {
+    background-color: #dddddd;
+    padding: 10px 0;
+}
+
+.box-price .title h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.box-price .text .price {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 1rem 0 !important;
+}
+
+.box-price .text p {
+    margin-bottom: 10px;
+}
+
+.box-price .btn-price {
+    padding: 10px 30px;
+    background-color: var(--btn-color);
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 15px;
+    display: inline-block;
+    border-radius: 2px;
+    transition: background-color .3s ease-out;
+}
+
+.box-price .btn-price:hover {
+    background-color: var(--icon-color);
+}
+
+footer {
+    background-color: #dddddd;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    padding: 3rem;
+}
+
+footer .info {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+footer .info a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+footer .copyright {
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+}
