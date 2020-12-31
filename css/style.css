@@ -1,6 +1,13 @@
 /* Custom Vars */
-:root {
 
+:root {
+    /* Colors */
+    --background: #EEEEEE;
+    --btn-color: #f1c40f;
+    --icon-color: #fb8c00;
+    /* Font */
+    --font: 'Lato', sans-serif;
+    ;
 }
 
 * {
@@ -8,21 +15,58 @@
     padding: 0;
 }
 
-*, 
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: inherit;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 html {
     box-sizing: border-box;
 }
 
 body {
-
+    background-color: var(--background);
+    font-family: var(--font);
+    color: black;
 }
 
 .container {
-    
+    width: 100%;
+    /* max-width: 1230px; */
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.header .header-image {
+    width: 17%;
+    margin-left: 2.5rem;
+}
+
+.header .nav-bar {
+    width: 30%;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+}
+
+.header .nav-bar ul li a {
+    text-decoration: none;
+    color: black;
 }
